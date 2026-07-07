@@ -6,8 +6,8 @@ class TestBankAccount(unittest.TestCase):
     def test_withdraw(self):
         account = bank_account.BankAccount(100, "caitlin", 1)
         self.assertEqual(account.withdraw(10), 90)
-        self.assertEqual(account.withdraw(20), 70)
-        self.assertEqual(account.withdraw(-10), 80)
+        self.assertEqual(account.withdraw(20.5), 69.5)
+        self.assertEqual(account.withdraw(-10), 79.5)
 
     def test_deposit(self):
         account = bank_account.BankAccount(100, "caitlin", 1)
