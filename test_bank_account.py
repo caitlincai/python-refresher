@@ -18,3 +18,7 @@ class TestBankAccount(unittest.TestCase):
     def test_print_current_balance(self):
         account = bank_account.BankAccount(100, "caitlin", 1)
         self.assertEqual(account.print_current_balance(), "Balance is: 100")
+        account = bank_account.BankAccount(200, "caitlin", 1)
+        self.assertEqual(account.print_current_balance(), "Balance is: 200")
+        account = bank_account.BankAccount(500, "caitlin", 1)
+        self.assertEqual(account.print_current_balance(), "Balance is: 500")

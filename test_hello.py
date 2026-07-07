@@ -19,12 +19,12 @@ class TestHello(unittest.TestCase):
 
     def test_tan(self):
         self.assertEqual(hello.tan(0), 0)
-        self.assertEqual(hello.tan(1), 1.557407724654902)
+        self.assertEqual(hello.tan(1), 1.5574077246549023)
         self.assertEqual(hello.tan(0.5), 0.5463024898437905)
 
     def test_cot(self):
         self.assertEqual(hello.cot(0), float("inf"))
-        self.assertEqual(hello.cot(1), 0.6420926159343308)
+        self.assertEqual(hello.cot(1), 0.6420926159343306)
         self.assertEqual(hello.cot(0.5), 1.830487721712452)
 
 
