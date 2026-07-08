@@ -6,14 +6,14 @@ class TestBankAccount(unittest.TestCase):
     def test_withdraw(self):
         account = bank_account.BankAccount(100, "caitlin", 1)
         self.assertEqual(account.withdraw(10), 90)
-        self.assertEqual(account.withdraw(20), 70)
-        self.assertEqual(account.withdraw(-10), 80)
+        self.assertEqual(account.withdraw(28.4), 61.6)
+        self.assertEqual(account.withdraw(-10), "Withdrawal amount invalid.")
 
     def test_deposit(self):
         account = bank_account.BankAccount(100, "caitlin", 1)
         self.assertEqual(account.deposit(10), 110)
-        self.assertEqual(account.deposit(20), 130)
-        self.assertEqual(account.deposit(-10), 120)
+        self.assertEqual(account.deposit(24.8), 134.8)
+        self.assertEqual(account.deposit(-10), "Deposit amount invalid.")
     
     def test_print_current_balance(self):
         account = bank_account.BankAccount(100, "caitlin", 1)
