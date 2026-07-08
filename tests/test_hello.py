@@ -1,6 +1,6 @@
 import math
 import unittest
-import hello
+import src.hello as hello
 import pytest
 import numpy as np
 

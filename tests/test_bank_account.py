@@ -1,4 +1,4 @@
-import bank_account
+import src.bank_account as bank_account
 import unittest
 
 class TestBankAccount(unittest.TestCase):      

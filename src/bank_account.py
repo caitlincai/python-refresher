@@ -20,9 +20,3 @@ class BankAccount:
     
     def print_current_balance(self) -> str:
         return f"Balance is: {self.balance}"
-    
-# def __main__():
-#     self.print_current_balance()
-
-# if __name__ == "__main__":
-#     __main__()
