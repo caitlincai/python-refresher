@@ -6,8 +6,13 @@ class TestBankAccount(unittest.TestCase):
     def test_withdraw(self):
         account = bank_account.BankAccount(100, "caitlin", 1)
         self.assertEqual(account.withdraw(10), 90)
+<<<<<<< HEAD
         self.assertEqual(account.withdraw(28.4), 61.6)
         self.assertEqual(account.withdraw(-10), "Withdrawal amount invalid.")
+=======
+        self.assertEqual(account.withdraw(20.5), 69.5)
+        self.assertEqual(account.withdraw(-10), 79.5)
+>>>>>>> 0fe7df7f018d054f6b99090ef6799e71df4ea668
 
     def test_deposit(self):
         account = bank_account.BankAccount(100, "caitlin", 1)
@@ -18,3 +23,7 @@ class TestBankAccount(unittest.TestCase):
     def test_print_current_balance(self):
         account = bank_account.BankAccount(100, "caitlin", 1)
         self.assertEqual(account.print_current_balance(), "Balance is: 100")
+        account = bank_account.BankAccount(200, "caitlin", 1)
+        self.assertEqual(account.print_current_balance(), "Balance is: 200")
+        account = bank_account.BankAccount(500, "caitlin", 1)
+        self.assertEqual(account.print_current_balance(), "Balance is: 500")
